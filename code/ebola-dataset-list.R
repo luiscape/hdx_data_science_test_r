@@ -52,10 +52,6 @@ getDatasetListforTag <- function(tag = NULL, verbose = FALSE) {
 		}
 	}
 
-	cat("---------------------------------------------\n")
-	cat("****************** DONE *********************\n")
-	cat("---------------------------------------------\n")
-
 	return(out)
 }
 
@@ -65,11 +61,13 @@ writeOutput <- function(csv = TRUE, l = NULL) {
 	if (is.null(l)) stop("Please provide a directory.")
 	data <- getDatasetListforTag("ebola", FALSE)
 	if (is.data.frame(data)) {
-		cat("---------------------------------------------\n")
 		cat("Writing CSV ... ")
 		if (csv) write.csv(data, l, row.names = FALSE)
 	}
 	cat("done.\n")
+	
+	cat("---------------------------------------------\n")
+	cat("****************** DONE *********************\n")
 	cat("---------------------------------------------\n")
 }
 

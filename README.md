@@ -32,7 +32,7 @@ $ bash run.sh
 Or if you would like to run it direcly using R, you can run:
 
 ```bash
-$ R code/ebola-dataset-list.R
+$ Rscript code/ebola-dataset-list.R
 ```
 
 Either approach above will throw an error. That's when the test starts. Good luck!
