@@ -59,7 +59,7 @@ getDatasetListforTag <- function(tag = NULL, verbose = FALSE) {
 # to the file system.
 writeOutput <- function(csv = TRUE, l = NULL) {
 	if (is.null(l)) stop("Please provide a directory.")
-	data <- getDatasetListforTag("ebola", FALSE)
+	data <- getDatasetListforTsg("ebola", FALSE)
 	if (is.data.frame(data)) {
 		cat("Writing CSV ... ")
 		if (csv) write.csv(data, l, row.names = FALSE)
