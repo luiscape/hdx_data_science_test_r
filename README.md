@@ -2,7 +2,7 @@
 This repository contains a broken script that needs to be fixed. The script contains 3 errors:
 
 1. The main function fails to run.
-2. The columns of the CSV output are improperly organized.
+2. The columns of the CSV output are improperly organized or have wrong input.
 3. Some records fail to be written in the output CSV file.
 
 You should be able to identify the source of all the errors above and be able to fix them, making sure that the script runs successully and that the output CSV file is correct.
